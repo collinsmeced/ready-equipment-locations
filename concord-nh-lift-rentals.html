@@ -133,8 +133,8 @@
 
     /* ---- HERO ---- */
     .hero {
-      background: linear-gradient(135deg, var(--dark) 0%, #3a3536 100%);
-      color: var(--white);
+      background: var(--gray-50);
+      color: var(--dark);
       padding: 5rem 2rem 4rem;
       text-align: center;
     }
@@ -147,14 +147,13 @@
       text-transform: uppercase;
       letter-spacing: 0.02em;
     }
-    .hero h1 .highlight { color: var(--teal); }
+    .hero h1 .highlight { color: var(--blue); }
     .hero p {
       font-family: 'Montserrat', sans-serif;
       font-size: 1.15rem;
       font-weight: 400;
       max-width: 600px;
       margin: 0 auto 2rem;
-      opacity: 0.9;
     }
     .hero-buttons {
       display: flex;
@@ -177,10 +176,10 @@
     .hero-cta-secondary {
       display: inline-block;
       background: transparent;
-      color: var(--white);
+      color: var(--dark);
       padding: 1rem 2.5rem;
       border-radius: 4px;
-      border: 2px solid var(--white);
+      border: 2px solid var(--dark);
       text-decoration: none;
       font-size: 1.05rem;
       font-weight: 700;
@@ -190,16 +189,16 @@
     .hero-sub {
       margin-top: 2rem;
       font-size: 0.85rem;
-      opacity: 0.6;
+      color: var(--gray-600);
       font-family: 'Montserrat', sans-serif;
-      border-top: 1px solid rgba(255,255,255,0.15);
+      border-top: 1px solid var(--gray-200);
       padding-top: 1.25rem;
       display: inline-block;
     }
 
     /* ---- TRUST BAR ---- */
     .trust-bar {
-      background: var(--gray-50);
+      background: var(--white);
       padding: 1.5rem 2rem;
       display: flex;
       justify-content: center;
@@ -284,7 +283,7 @@
     .equip-card .rent-link:hover { background: var(--blue-dark); }
 
     /* ---- WHY US ---- */
-    .why-section { background: var(--gray-50); }
+    .why-section { background: var(--white); }
     .why-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -388,8 +387,8 @@
 
     /* ---- CTA BANNER ---- */
     .cta-banner {
-      background: linear-gradient(135deg, var(--dark) 0%, #3a3536 100%);
-      color: var(--white);
+      background: var(--gray-50);
+      color: var(--dark);
       text-align: center;
       padding: 4rem 2rem;
     }
@@ -400,7 +399,7 @@
     }
     .cta-banner p {
       font-size: 1.1rem;
-      opacity: 0.85;
+      color: var(--gray-600);
       margin-bottom: 2rem;
       font-family: 'Montserrat', sans-serif;
     }
@@ -472,7 +471,7 @@
       text-transform: uppercase;
       letter-spacing: 0.05em;
       margin-bottom: 0.75rem;
-      color: var(--teal);
+      color: var(--blue);
     }
     .footer-col p, .footer-col a {
       font-size: 0.85rem;
@@ -758,7 +757,7 @@
     <div class="footer-bottom">
       <div style="display: flex; flex-direction: column; align-items: center; gap: 0.25rem;">
         <span style="font-size: 0.65rem; color: rgba(255,255,255,0.4); text-transform: uppercase; letter-spacing: 0.1em;">Powered by</span>
-        <a href="https://readyeq.com" style="display: block;"><img src="https://irp.cdn-website.com/b7c0f111/dms3rep/multi/readyeq-logo.png" alt="Ready Equipment" style="height: 28px; width: auto; opacity: 0.7; transition: opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'"></a>
+        <a href="https://readyeq.com" style="display: block;"><img src="images/ready-equipment-logo.png" alt="Ready Equipment" style="height: 50px; width: auto; filter: brightness(0) invert(1); opacity: 0.7; transition: opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'"></a>
       </div>
       <p>&copy; 2026 Ready Equipment LLC. All rights reserved.</p>
       <div class="footer-social">
