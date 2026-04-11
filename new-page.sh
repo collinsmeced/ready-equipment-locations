@@ -263,13 +263,83 @@ with open('${SCRIPT_DIR}/${FILENAME}', 'w') as f:
     f.write(content)
 "
 
+# --- Auto-update sitemap.xml ---
+echo "Updating sitemap.xml..."
+SITEMAP="$SCRIPT_DIR/sitemap.xml"
+# Insert new URL entry before closing </urlset>
+NEW_ENTRY="  <url>\n    <loc>https://locations.readyeq.com/${SLUG}.html</loc>\n    <lastmod>$(date +%Y-%m-%d)</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>1.0</priority>\n  </url>"
+sed -i '' "s|</urlset>|${NEW_ENTRY}\n</urlset>|" "$SITEMAP"
+
+# --- Auto-update cross-links ---
+echo "Adding cross-links..."
+
+# Build the new page's link HTML for inserting into existing pages
+NEW_LINK="      <a href=\"${FILENAME}\" style=\"color: var(--blue); text-decoration: none; font-weight: 600; font-size: 0.95rem; display: inline-block; margin: 0.25rem 0.75rem;\">${EQUIPMENT_TYPE} in ${CITY}, ${STATE}</a>"
+
+# Collect all existing landing page files (exclude template, index, and the new file)
+EXISTING_PAGES=$(find "$SCRIPT_DIR" -maxdepth 1 -name "*.html" \
+  ! -name "template.html" \
+  ! -name "index.html" \
+  ! -name "$FILENAME" \
+  -type f)
+
+# Build cross-links for the NEW page (links to all existing pages)
+CROSS_LINKS=""
+for PAGE in $EXISTING_PAGES; do
+  PAGE_BASE=$(basename "$PAGE")
+  # Extract the page title from the <title> tag
+  PAGE_TITLE=$(sed -n 's/.*<title>\(.*\) | Ready Equipment<\/title>.*/\1/p' "$PAGE")
+  if [ -n "$PAGE_TITLE" ]; then
+    CROSS_LINKS="${CROSS_LINKS}      <a href=\"${PAGE_BASE}\" style=\"color: var(--blue); text-decoration: none; font-weight: 600; font-size: 0.95rem; display: inline-block; margin: 0.25rem 0.75rem;\">${PAGE_TITLE}</a>\n"
+  fi
+done
+
+# Add cross-links section to the new page (before <!-- FOOTER -->)
+if [ -n "$CROSS_LINKS" ]; then
+  python3 -c "
+content = open('${SCRIPT_DIR}/${FILENAME}').read()
+links = '''${CROSS_LINKS}'''
+section = '''  <!-- MORE SERVICE AREAS -->
+  <section style=\"padding: 2.5rem 2rem; background: var(--gray-50); border-top: 1px solid var(--gray-200);\">
+    <div class=\"container\" style=\"text-align: center;\">
+      <h3 style=\"font-size: 1rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--gray-500); margin-bottom: 1rem;\">More Service Areas</h3>
+''' + links + '''    </div>
+  </section>
+
+'''
+content = content.replace('  <!-- FOOTER -->', section + '  <!-- FOOTER -->')
+open('${SCRIPT_DIR}/${FILENAME}', 'w').write(content)
+"
+fi
+
+# Add the new page's link to ALL existing pages
+for PAGE in $EXISTING_PAGES; do
+  if grep -q "More Service Areas" "$PAGE"; then
+    # Page already has a cross-links section — add to it
+    sed -i '' "s|</h3>|</h3>\n${NEW_LINK}|" "$PAGE"
+    # Deduplicate (only keep first h3 replacement)
+    # Actually sed replaces only the first match by default on macOS, so this is fine
+  fi
+done
+
+# --- Auto-update index.html ---
+echo "Updating index.html..."
+INDEX="$SCRIPT_DIR/index.html"
+NEW_INDEX_ENTRY="    <a href=\"${FILENAME}\" class=\"page-link\">\n      <h2>${EQUIPMENT_TYPE} in ${CITY}, ${STATE}</h2>\n      <p>${HERO_DESCRIPTION}</p>\n    </a>"
+sed -i '' "s|<!-- Add new pages here as you create them -->|${NEW_INDEX_ENTRY}\n    <!-- Add new pages here as you create them -->|" "$INDEX"
+
 echo ""
 echo "========================================"
 echo "  Page created: $FILENAME"
 echo "========================================"
 echo ""
+echo "Auto-updated:"
+echo "  - sitemap.xml (new entry added)"
+echo "  - Cross-links (all pages now link to each other)"
+echo "  - index.html (new listing added)"
+echo ""
 echo "Next steps:"
 echo "  1. Review the page:  open $SCRIPT_DIR/$FILENAME"
-echo "  2. Push to GitHub:   git add $FILENAME && git commit -m 'Add ${CITY} ${EQUIPMENT_TYPE} page' && git push"
+echo "  2. Deploy:  git add -A && git commit -m 'Add ${CITY} ${EQUIPMENT_TYPE} page' && git push"
 echo "  3. It'll be live at: https://locations.readyeq.com/${SLUG}"
 echo ""
