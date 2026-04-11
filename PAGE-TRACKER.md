@@ -4,8 +4,8 @@
 - **Total towns**: 21 (including Laconia)
 - **Page types per town**: 2 (Lifts, Earthmoving)
 - **Total pages planned**: 42
-- **Pages live**: 8
-- **Pages remaining**: 34
+- **Pages live**: 18
+- **Pages remaining**: 24
 
 ## Page Status
 
@@ -16,11 +16,11 @@
 | **Concord, NH** | Central NH | LIVE | LIVE | State capital, 45 min south on I-93 |
 | **Wolfeboro, NH** | Lakes Region | LIVE | LIVE | East side of Winnipesaukee, ~30 min |
 | **Plymouth, NH** | White Mountains | LIVE | LIVE | College town, ~30 min north |
-| **Ashland, NH** | Lakes/Mountains | TODO | TODO | Just north of Meredith, ~15 min |
-| **Lincoln, NH** | White Mountains | TODO | TODO | Ski country, ~45 min north on I-93 |
-| **Campton, NH** | White Mountains | TODO | TODO | Between Plymouth & Lincoln, ~35 min |
-| **Littleton, NH** | North Country | TODO | TODO | Farthest north, ~1 hr on I-93 |
-| **Bristol, NH** | Lakes Region | TODO | TODO | Newfound Lake area, ~25 min |
+| **Ashland, NH** | Lakes/Mountains | LIVE | LIVE | Just north of Meredith, ~15 min |
+| **Lincoln, NH** | White Mountains | LIVE | LIVE | Ski country, ~45 min north on I-93 |
+| **Campton, NH** | White Mountains | LIVE | LIVE | Between Plymouth & Lincoln, ~35 min |
+| **Littleton, NH** | North Country | LIVE | LIVE | Farthest north, ~1 hr on I-93 |
+| **Bristol, NH** | Lakes Region | LIVE | LIVE | Newfound Lake area, ~25 min |
 | **Tilton, NH** | Lakes Region | TODO | TODO | Outlets area, ~20 min south |
 | **Belmont, NH** | Lakes Region | TODO | TODO | Between Laconia & Tilton, ~15 min |
 | **Boscawen, NH** | Central NH | TODO | TODO | North of Concord, ~35 min |
