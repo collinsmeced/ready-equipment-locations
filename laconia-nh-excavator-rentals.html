@@ -309,6 +309,37 @@
     .why-card h3 { color: var(--dark); margin-bottom: 0.5rem; font-size: 1rem; text-transform: uppercase; }
     .why-card p { color: var(--gray-600); font-size: 0.9rem; font-family: 'Montserrat', sans-serif; }
 
+    /* ---- DELIVERY ---- */
+    .delivery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .delivery-card {
+      background: var(--white);
+      border: 1px solid var(--gray-200);
+      border-radius: 8px;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+    .delivery-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .delivery-card h3 {
+      font-size: 1.05rem;
+      color: var(--dark);
+      margin-bottom: 0.75rem;
+      text-transform: uppercase;
+    }
+    .delivery-card p {
+      color: var(--gray-600);
+      font-size: 0.9rem;
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.7;
+    }
+
     /* ---- SERVICE AREA ---- */
     .area-content {
       display: grid;
@@ -504,7 +535,7 @@
   <!-- HERO -->
   <section class="hero">
     <h1><span class="highlight">Excavator Rentals</span> in Laconia, NH</h1>
-    <p>Mini excavators, skid steers, and earthmoving equipment delivered directly to your Laconia job site. Daily, weekly, and monthly rates.</p>
+    <p>Digging a foundation in Gilford? Clearing a lot in Belmont? We're 10 minutes up the road in Meredith and deliver excavators, skid steers, and attachments across the Lakes Region with same-day availability.</p>
     <div class="hero-buttons">
       <a href="https://rent.readyeq.com/items/earthmoving" class="hero-cta">Browse Excavators &amp; Reserve Online</a>
       <a href="tel:+16032797323" class="hero-cta-secondary">Call or Text 603-279-7323</a>
@@ -587,6 +618,31 @@
           <div class="why-icon">&#9881;</div>
           <h3>Parts &amp; Service</h3>
           <p>Full service department in Meredith &mdash; just minutes away. If something goes wrong, we fix it fast.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DELIVERY & PICKUP -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">Easy Delivery &amp; Pickup for Earthmoving</h2>
+      <p class="section-sub">Heavy equipment logistics handled &mdash; we bring the machines, you dig.</p>
+      <div class="delivery-grid">
+        <div class="delivery-card">
+          <div class="delivery-icon">&#128666;</div>
+          <h3>Same-Day Delivery Available</h3>
+          <p>We're just 10 minutes from Laconia in Meredith. When a mini excavator or skid steer is in stock, we can often get it to your site the same day you call. We transport on our own trailers &mdash; no third-party freight delays.</p>
+        </div>
+        <div class="delivery-card">
+          <div class="delivery-icon">&#128736;</div>
+          <h3>Attachments Delivered Too</h3>
+          <p>Need an auger, breaker, or mulcher with your machine? We deliver attachments along with your excavator or skid steer so everything arrives together and you can start working immediately.</p>
+        </div>
+        <div class="delivery-card">
+          <div class="delivery-icon">&#9745;</div>
+          <h3>We Pick It Up When You're Done</h3>
+          <p>Finished your dig? Call us and we'll come load up the machine from your Laconia site. No flatbed rental needed, no driving to our yard. We handle all the hauling so you can move on to the next job.</p>
         </div>
       </div>
     </div>

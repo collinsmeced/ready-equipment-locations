@@ -367,6 +367,37 @@
     .why-card h3 { color: var(--dark); margin-bottom: 0.5rem; font-size: 1rem; text-transform: uppercase; }
     .why-card p { color: var(--gray-600); font-size: 0.9rem; font-family: 'Montserrat', sans-serif; }
 
+    /* ---- DELIVERY ---- */
+    .delivery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .delivery-card {
+      background: var(--white);
+      border: 1px solid var(--gray-200);
+      border-radius: 8px;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+    .delivery-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .delivery-card h3 {
+      font-size: 1.05rem;
+      color: var(--dark);
+      margin-bottom: 0.75rem;
+      text-transform: uppercase;
+    }
+    .delivery-card p {
+      color: var(--gray-600);
+      font-size: 0.9rem;
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.7;
+    }
+
     /* ---- SERVICE AREA ---- */
     .area-content {
       display: grid;
@@ -562,7 +593,7 @@
   <!-- HERO -->
   <section class="hero">
     <h1><span class="highlight">Lift Rentals</span> in Laconia, NH</h1>
-    <p>Scissor lifts, boom lifts, and aerial equipment delivered directly to your Laconia job site. Daily, weekly, and monthly rates.</p>
+    <p>Working on a lakeside property in Gilford? A commercial build on Union Avenue? We're right down the road in Meredith and deliver aerial lifts across the Lakes Region with same-day availability.</p>
     <div class="hero-buttons">
       <a href="https://rent.readyeq.com/items/mobile-elevated-work-platform" class="hero-cta">Browse Lifts &amp; Reserve Online</a>
       <a href="tel:+16032797323" class="hero-cta-secondary">Call or Text 603-279-7323</a>
@@ -642,6 +673,31 @@
     </div>
   </section>
 
+  <!-- DELIVERY & PICKUP -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">Easy Delivery &amp; Pickup in Laconia</h2>
+      <p class="section-sub">We're just 10 minutes up Route 3 &mdash; practically neighbors.</p>
+      <div class="delivery-grid">
+        <div class="delivery-card">
+          <div class="delivery-icon">&#128666;</div>
+          <h3>Same-Day Delivery Available</h3>
+          <p>Laconia is one of our closest service areas. We're just 10 minutes north in Meredith, which means we can often get a lift to your job site the same day you call. Morning calls get priority for same-day drops.</p>
+        </div>
+        <div class="delivery-card">
+          <div class="delivery-icon">&#128197;</div>
+          <h3>Flexible Rental Periods</h3>
+          <p>Rent by the day, week, or month &mdash; no long-term contracts. Whether you need a scissor lift for a quick weekend job at a Weirs Beach property or a boom lift for a month-long project in Gilford, we'll match your timeline.</p>
+        </div>
+        <div class="delivery-card">
+          <div class="delivery-icon">&#9745;</div>
+          <h3>We Pick It Up When You're Done</h3>
+          <p>Call us when your job wraps up. Our drivers handle pickup across the Lakes Region &mdash; Laconia, Gilford, Belmont, Tilton, and everywhere in between. No need to trailer anything back to us.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- SERVICE AREA -->
   <section>
     <div class="container">
@@ -695,28 +751,28 @@
       <p class="section-sub">Common questions about renting lifts in Laconia, NH.</p>
       <div class="faq-list">
         <div class="faq-item">
-          <div class="faq-q">Do you deliver lift equipment to Laconia, NH?</div>
-          <div class="faq-a">Yes! We deliver scissor lifts, boom lifts, and towable lifts directly to job sites in Laconia and surrounding Lakes Region towns. We're based in Meredith, just 10 minutes away. Call us at 603-279-7323 for delivery details.</div>
+          <div class="faq-q">How close are you to Laconia?</div>
+          <div class="faq-a">We're located at 25 Daniel Webster Hwy in Meredith &mdash; just 10 minutes north of Laconia on Route 3. Laconia is one of our closest and most frequently served areas. Call 603-279-7323 to schedule delivery.</div>
         </div>
         <div class="faq-item">
-          <div class="faq-q">How quickly can I get a lift delivered?</div>
-          <div class="faq-a">In many cases, we can deliver same-day or next-day depending on availability. Call us or check availability online at rent.readyeq.com.</div>
+          <div class="faq-q">Can I get a lift delivered the same day I call?</div>
+          <div class="faq-a">Very often, yes. Since Laconia is so close to our Meredith shop, same-day delivery is common when equipment is in stock. Call us in the morning for the best chance at a same-day drop, or reserve ahead at <a href="https://rent.readyeq.com/items/mobile-elevated-work-platform" style="color: var(--blue);">rent.readyeq.com</a>.</div>
         </div>
         <div class="faq-item">
-          <div class="faq-q">Can I reserve a lift online?</div>
-          <div class="faq-a">Yes! Visit <a href="https://rent.readyeq.com/items/mobile-elevated-work-platform" style="color: var(--blue);">rent.readyeq.com</a> to browse available lifts and reserve online. You can also call us at 603-279-7323.</div>
+          <div class="faq-q">What's the best lift for outdoor work on uneven ground?</div>
+          <div class="faq-a">For outdoor work on rough or uneven terrain &mdash; common on Lakes Region job sites &mdash; we recommend rough-terrain scissor lifts or articulating boom lifts. They handle slopes, gravel, and soft ground much better than electric indoor models. Call us and we'll help match the right lift to your site conditions.</div>
         </div>
         <div class="faq-item">
-          <div class="faq-q">Do I need a license to operate a scissor lift?</div>
-          <div class="faq-a">OSHA requires operators to be trained on the specific type of lift they're using. We can provide basic operational orientation when we deliver your equipment.</div>
+          <div class="faq-q">Do you pick up the equipment when I'm done?</div>
+          <div class="faq-a">Yes &mdash; just call us and we'll schedule pickup from your Laconia job site. Since we're only 10 minutes away, we can usually pick up within the same day or next morning. No need to haul anything back to us.</div>
         </div>
         <div class="faq-item">
-          <div class="faq-q">What are your hours?</div>
-          <div class="faq-a">Monday through Friday 7:00 AM &ndash; 5:00 PM, Saturday 8:00 AM &ndash; 2:00 PM. Closed Sundays. Visit us at 25 Daniel Webster Hwy, Meredith, NH 03253.</div>
+          <div class="faq-q">Can I tow one of your towable lifts myself?</div>
+          <div class="faq-a">Yes! Our towable lifts are designed to be towed with a standard hitch. This is a popular option for contractors in the Lakes Region who work on multiple sites &mdash; you can move the lift between jobs without scheduling a separate delivery each time.</div>
         </div>
         <div class="faq-item">
-          <div class="faq-q">What if the equipment breaks down on my job site?</div>
-          <div class="faq-a">We maintain all our equipment to high standards and have a full parts &amp; service department in Meredith, just minutes from Laconia. If something goes wrong, call us and we'll get it resolved quickly.</div>
+          <div class="faq-q">What happens if the lift breaks down on site?</div>
+          <div class="faq-a">Call us immediately at 603-279-7323. Our parts &amp; service department is in Meredith, just minutes from Laconia. We can often troubleshoot over the phone, and if a tech visit is needed, we're close enough to respond quickly &mdash; usually within an hour or two.</div>
         </div>
       </div>
     </div>

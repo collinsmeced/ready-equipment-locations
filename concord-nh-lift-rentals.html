@@ -309,6 +309,37 @@
     .why-card h3 { color: var(--dark); margin-bottom: 0.5rem; font-size: 1rem; text-transform: uppercase; }
     .why-card p { color: var(--gray-600); font-size: 0.9rem; font-family: 'Montserrat', sans-serif; }
 
+    /* ---- DELIVERY ---- */
+    .delivery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .delivery-card {
+      background: var(--white);
+      border: 1px solid var(--gray-200);
+      border-radius: 8px;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+    .delivery-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .delivery-card h3 {
+      font-size: 1.05rem;
+      color: var(--dark);
+      margin-bottom: 0.75rem;
+      text-transform: uppercase;
+    }
+    .delivery-card p {
+      color: var(--gray-600);
+      font-size: 0.9rem;
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.7;
+    }
+
     /* ---- SERVICE AREA ---- */
     .area-content {
       display: grid;
@@ -504,7 +535,7 @@
   <!-- HERO -->
   <section class="hero">
     <h1><span class="highlight">Lift Rentals</span> in Concord, NH</h1>
-    <p>Scissor lifts, boom lifts, and aerial equipment delivered directly to your Concord job site. Daily, weekly, and monthly rates.</p>
+    <p>Need a scissor lift for a warehouse project off Loudon Road? A boom lift for building maintenance downtown? We deliver aerial equipment directly to your Concord job site with same-day availability.</p>
     <div class="hero-buttons">
       <a href="https://rent.readyeq.com/items/mobile-elevated-work-platform" class="hero-cta">Browse Lifts &amp; Reserve Online</a>
       <a href="tel:+16032797323" class="hero-cta-secondary">Call or Text 603-279-7323</a>
@@ -558,7 +589,7 @@
   <section class="why-section">
     <div class="container">
       <h2 class="section-title">Why Concord Contractors Choose Ready Equipment</h2>
-      <p class="section-sub">We're not a national chain. We're a local equipment company with rentals, sales, parts, and service &mdash; all under one roof.</p>
+      <p class="section-sub">Concord is about 45 minutes south of our Meredith shop, but we make it easy &mdash; we bring the equipment to you and pick it up when you're done.</p>
       <div class="why-grid">
         <div class="why-card">
           <div class="why-icon">$</div>
@@ -579,6 +610,31 @@
           <div class="why-icon">&#9881;</div>
           <h3>Parts &amp; Service</h3>
           <p>Full service department in Meredith. If something goes wrong, we fix it fast.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DELIVERY & PICKUP -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">Easy Delivery &amp; Pickup in Concord</h2>
+      <p class="section-sub">We handle the logistics so you can focus on your job.</p>
+      <div class="delivery-grid">
+        <div class="delivery-card">
+          <div class="delivery-icon">&#128666;</div>
+          <h3>Same-Day Delivery Available</h3>
+          <p>Need a lift today? Call us by mid-morning and we can often get equipment to your Concord job site the same day. Our Meredith shop is about 45 minutes north on I-93, and we make the trip to Concord regularly.</p>
+        </div>
+        <div class="delivery-card">
+          <div class="delivery-icon">&#128197;</div>
+          <h3>Flexible Rental Periods</h3>
+          <p>Rent by the day, week, or month. No long-term commitments required. Whether it's a one-day ceiling repair or a multi-week construction project on Storrs Street, we'll match the rental period to your timeline.</p>
+        </div>
+        <div class="delivery-card">
+          <div class="delivery-icon">&#9745;</div>
+          <h3>We Pick It Up When You're Done</h3>
+          <p>Just call us when your job wraps up and we'll come get the equipment. No need to haul anything back yourself &mdash; our drivers handle drop-off and pickup across the greater Concord area, from Bow to Canterbury.</p>
         </div>
       </div>
     </div>
@@ -638,27 +694,27 @@
       <div class="faq-list">
         <div class="faq-item">
           <div class="faq-q">Do you deliver lift equipment to Concord, NH?</div>
-          <div class="faq-a">Yes! We deliver scissor lifts, boom lifts, and towable lifts directly to job sites in Concord and surrounding towns. Call us at 603-279-7323 for delivery details.</div>
+          <div class="faq-a">Yes! We're based in Meredith and deliver scissor lifts, boom lifts, and towable lifts to job sites throughout the Concord area &mdash; including Bow, Pembroke, Hooksett, Loudon, and Canterbury. The drive is about 45 minutes on I-93. Call us at 603-279-7323 to schedule.</div>
         </div>
         <div class="faq-item">
-          <div class="faq-q">How quickly can I get a lift delivered?</div>
-          <div class="faq-a">In many cases, we can deliver same-day or next-day depending on availability. Call us or check availability online at rent.readyeq.com.</div>
+          <div class="faq-q">Can I get same-day delivery to Concord?</div>
+          <div class="faq-a">In many cases, yes. If you call by mid-morning and the equipment is available, we can typically get it to your Concord site the same day. For guaranteed timing, we recommend reserving at least a day ahead at <a href="https://rent.readyeq.com/items/mobile-elevated-work-platform" style="color: var(--blue);">rent.readyeq.com</a>.</div>
         </div>
         <div class="faq-item">
-          <div class="faq-q">Can I reserve a lift online?</div>
-          <div class="faq-a">Yes! Visit <a href="https://rent.readyeq.com/items/mobile-elevated-work-platform" style="color: var(--blue);">rent.readyeq.com</a> to browse available lifts and reserve online. You can also call us at 603-279-7323.</div>
+          <div class="faq-q">What types of lifts work best for indoor jobs?</div>
+          <div class="faq-a">Electric scissor lifts are ideal for indoor work &mdash; they're zero-emission, quieter, and won't mark up finished floors. We carry models with platform heights from 19' to 40', which covers most warehouse, retail, and commercial interior jobs in the Concord area.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Do you handle pickup when I'm done?</div>
+          <div class="faq-a">Absolutely. When your job wraps up, just give us a call and we'll come pick up the equipment from your site. No need to transport anything back to Meredith yourself &mdash; delivery and pickup are part of the service.</div>
         </div>
         <div class="faq-item">
           <div class="faq-q">Do I need a license to operate a scissor lift?</div>
-          <div class="faq-a">OSHA requires operators to be trained on the specific type of lift they're using. We can provide basic operational orientation when we deliver your equipment.</div>
+          <div class="faq-a">OSHA requires operators to be trained on the specific type of lift they're using. We can provide basic operational orientation when we deliver your equipment. For formal OSHA certification, check with your employer or a local training provider.</div>
         </div>
         <div class="faq-item">
-          <div class="faq-q">What are your hours?</div>
-          <div class="faq-a">Monday through Friday 7:00 AM &ndash; 5:00 PM, Saturday 8:00 AM &ndash; 2:00 PM. Closed Sundays. Visit us at 25 Daniel Webster Hwy, Meredith, NH 03253.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q">What if the equipment breaks down on my job site?</div>
-          <div class="faq-a">We maintain all our equipment to high standards and have a full parts &amp; service department. If something goes wrong, call us and we'll get it resolved quickly.</div>
+          <div class="faq-q">What if something goes wrong with the equipment on my job site?</div>
+          <div class="faq-a">Call us right away at 603-279-7323. We have a full parts &amp; service department in Meredith and can often troubleshoot by phone or dispatch a technician. For Concord-area jobs, we can usually have someone to your site within a couple hours.</div>
         </div>
       </div>
     </div>
