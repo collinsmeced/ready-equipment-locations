@@ -4,8 +4,8 @@
 - **Total towns**: 21 (including Laconia)
 - **Page types per town**: 2 (Lifts, Earthmoving)
 - **Total pages planned**: 42
-- **Pages live**: 30
-- **Pages remaining**: 12
+- **Pages live**: 42
+- **Pages remaining**: 0
 
 ## Page Status
 
@@ -27,12 +27,12 @@
 | **Northfield, NH** | Lakes Region | LIVE | LIVE | Near Tilton/Franklin, ~20 min |
 | **Ossipee, NH** | Lakes Region East | LIVE | LIVE | Rt 16 corridor, ~40 min east |
 | **Moultonboro, NH** | Lakes Region | LIVE | LIVE | North shore Winnipesaukee, ~20 min |
-| **Sandwich, NH** | Lakes/Mountains | TODO | TODO | Rural, between lakes & mountains |
-| **Holderness, NH** | Lakes Region | TODO | TODO | Squam Lake area, ~15 min |
-| **Rumney, NH** | White Mountains | TODO | TODO | West of Plymouth, ~35 min |
-| **Pembroke, NH** | Central NH | TODO | TODO | Just south of Concord, ~40 min |
-| **Loudon, NH** | Central NH | TODO | TODO | NH Motor Speedway, ~30 min |
-| **Alton, NH** | Lakes Region | TODO | TODO | South end of Winnipesaukee, ~25 min |
+| **Sandwich, NH** | Lakes/Mountains | LIVE | LIVE | Rural, between lakes & mountains |
+| **Holderness, NH** | Lakes Region | LIVE | LIVE | Squam Lake area, ~15 min |
+| **Rumney, NH** | White Mountains | LIVE | LIVE | West of Plymouth, ~35 min |
+| **Pembroke, NH** | Central NH | LIVE | LIVE | Just south of Concord, ~40 min |
+| **Loudon, NH** | Central NH | LIVE | LIVE | NH Motor Speedway, ~30 min |
+| **Alton, NH** | Lakes Region | LIVE | LIVE | South end of Winnipesaukee, ~25 min |
 
 ## Regional Groupings (for nearby towns in each page)
 
