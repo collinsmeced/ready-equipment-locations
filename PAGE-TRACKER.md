@@ -4,8 +4,8 @@
 - **Total towns**: 21 (including Laconia)
 - **Page types per town**: 2 (Lifts, Earthmoving)
 - **Total pages planned**: 42
-- **Pages live**: 18
-- **Pages remaining**: 24
+- **Pages live**: 30
+- **Pages remaining**: 12
 
 ## Page Status
 
@@ -21,12 +21,12 @@
 | **Campton, NH** | White Mountains | LIVE | LIVE | Between Plymouth & Lincoln, ~35 min |
 | **Littleton, NH** | North Country | LIVE | LIVE | Farthest north, ~1 hr on I-93 |
 | **Bristol, NH** | Lakes Region | LIVE | LIVE | Newfound Lake area, ~25 min |
-| **Tilton, NH** | Lakes Region | TODO | TODO | Outlets area, ~20 min south |
-| **Belmont, NH** | Lakes Region | TODO | TODO | Between Laconia & Tilton, ~15 min |
-| **Boscawen, NH** | Central NH | TODO | TODO | North of Concord, ~35 min |
-| **Northfield, NH** | Lakes Region | TODO | TODO | Near Tilton/Franklin, ~20 min |
-| **Ossipee, NH** | Lakes Region East | TODO | TODO | Rt 16 corridor, ~40 min east |
-| **Moultonboro, NH** | Lakes Region | TODO | TODO | North shore Winnipesaukee, ~20 min |
+| **Tilton, NH** | Lakes Region | LIVE | LIVE | Outlets area, ~20 min south |
+| **Belmont, NH** | Lakes Region | LIVE | LIVE | Between Laconia & Tilton, ~15 min |
+| **Boscawen, NH** | Central NH | LIVE | LIVE | North of Concord, ~35 min |
+| **Northfield, NH** | Lakes Region | LIVE | LIVE | Near Tilton/Franklin, ~20 min |
+| **Ossipee, NH** | Lakes Region East | LIVE | LIVE | Rt 16 corridor, ~40 min east |
+| **Moultonboro, NH** | Lakes Region | LIVE | LIVE | North shore Winnipesaukee, ~20 min |
 | **Sandwich, NH** | Lakes/Mountains | TODO | TODO | Rural, between lakes & mountains |
 | **Holderness, NH** | Lakes Region | TODO | TODO | Squam Lake area, ~15 min |
 | **Rumney, NH** | White Mountains | TODO | TODO | West of Plymouth, ~35 min |
